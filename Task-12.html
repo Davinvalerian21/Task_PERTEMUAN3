@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Account</title>
+    <style>
+        body { font-family: sans-serif; }
+        table { max-width: 600px; margin: auto; }
+        td { padding: 10px; }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="password"], select {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .btn-submit {
+            background-color: #3b5998;
+            color: white;
+            padding: 12px 0;
+            width: 50%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align: center;">Create Account</h2>
+
+<form>
+    <table border="0" width="100%">
+        <tr>
+            <td width="50%"><input type="text" name="firstname" placeholder="First Name"></td>
+            <td width="50%"><input type="text" name="lastname" placeholder="Last Name"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <select name="country">
+                    <option value="" disabled selected>Country</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Japan">Japan</option>
+                    <option value="South Korea">South Korea</option>
+                    <option value="China">China</option>
+                    <option value="other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="email" name="email" placeholder="Email Address"></td>
+            <td><input type="tel" name="phone" placeholder="Phone Number"></td>
+        </tr>
+        <tr>
+            <td><input type="password" name="password" placeholder="Password"></td>
+            <td><input type="password" name="confirmpassword" placeholder="Confirm Password"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms">Terms and Condition</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center; padding-top: 20px;">
+                <input type="submit" value="Create" class="btn-submit">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
